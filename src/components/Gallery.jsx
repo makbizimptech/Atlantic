@@ -3,10 +3,10 @@ import { Eye, ArrowLeftRight } from 'lucide-react';
 
 const IMAGES_DATA = {
   gutter: {
-    before: '/gutter_dirty.png',
-    after: '/gutter_clean.png',
-    title: 'Gutter Cleaning',
-    desc: 'Fully cleared gutters free of blockage, twigs, and rotting leaves, ensuring efficient rainfall run-offs.'
+    before: '/home_powerwash_before.jpg',
+    after: '/home_powerwash_after.jpg',
+    title: 'Home Powerwash',
+    desc: 'Deep cleaning of your home exterior, removing built-up dirt, grime, and mildew to restore your siding to its original beauty.'
   },
   patio: {
     before: '/patio_dirty.png',
@@ -73,7 +73,7 @@ export default function Gallery() {
                   className={`gallery-tab ${activeTab === 'gutter' ? 'active' : ''}`}
                   onClick={() => { setActiveTab('gutter'); setSliderPosition(50); }}
                 >
-                  Gutter Cleaning
+                  Home Powerwash
                 </button>
                 <button 
                   className={`gallery-tab ${activeTab === 'patio' ? 'active' : ''}`}
