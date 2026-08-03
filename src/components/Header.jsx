@@ -67,6 +67,25 @@ export default function Header() {
             font-size: 12px !important;
           }
         }
+        @media (max-width: 576px) {
+          .page-header-top .container {
+            justify-content: center !important;
+            flex-direction: column !important;
+            gap: 16px !important;
+          }
+          .page-header-phone {
+            align-items: center !important;
+          }
+          .page-header-top-right {
+            flex-direction: column !important;
+            width: 100% !important;
+          }
+          .quote-button-wrap .btn-quote {
+            width: 100% !important;
+            justify-content: center !important;
+            padding: 12px !important;
+          }
+        }
       `}</style>
 
       {/* Top Tier (White) */}
