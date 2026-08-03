@@ -3359,4 +3359,131 @@ button, input, select, textarea {
   }
 }
 
+/* Call Us CTA Section */
+.call-us-section {
+  padding: 80px 0;
+  background: var(--light-bg);
+}
 
+.call-us-card {
+  background: linear-gradient(135deg, var(--dark-color) 0%, #1a2538 100%);
+  border-radius: 24px;
+  padding: 60px;
+  box-shadow: 0 20px 40px rgba(14, 22, 38, 0.15);
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.call-us-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  right: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(36, 116, 252, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.call-us-content {
+  position: relative;
+  z-index: 2;
+}
+
+.call-us-title {
+  font-size: 36px;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.call-us-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 50px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.call-us-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.call-us-methods.single-method {
+  grid-template-columns: max-content;
+  justify-content: center;
+}
+
+.contact-method-box {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 30px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.contact-method-box:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.contact-icon-circle {
+  width: 60px;
+  height: 60px;
+  background: var(--accent-yellow);
+  color: var(--dark-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  box-shadow: 0 10px 20px rgba(247, 189, 0, 0.2);
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.contact-label {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.contact-value {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--white);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a.contact-value:hover {
+  color: var(--accent-yellow);
+}
+
+@media (max-width: 992px) {
+  .call-us-card {
+    padding: 40px 20px;
+  }
+  .call-us-title {
+    font-size: 28px;
+  }
+  .contact-value {
+    font-size: 24px;
+  }
+}
