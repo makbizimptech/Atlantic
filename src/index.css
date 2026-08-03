@@ -1179,6 +1179,7 @@ button, input, select, textarea {
 
 .gallery-tabs {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   margin-bottom: 24px;
 }
@@ -1191,12 +1192,26 @@ button, input, select, textarea {
   border: 1px solid var(--border-color);
   background: var(--white);
   cursor: pointer;
+  flex: 1 1 auto;
+  text-align: center;
 }
 
 .gallery-tab.active {
   background: var(--dark-color);
   color: var(--white);
   border-color: var(--dark-color);
+}
+
+@media (max-width: 768px) {
+  .gallery-block {
+    padding: 20px 15px;
+  }
+  .slider-container {
+    height: 260px;
+  }
+  .gallery-tab {
+    flex: 1 1 100%;
+  }
 }
 
 /* Timeline/How it works */
