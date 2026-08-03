@@ -13,6 +13,12 @@ const IMAGES_DATA = {
     after: '/new_patio_after.jpg',
     title: 'Patio Power Washing',
     desc: 'Deep pressure wash removing years of grime, green moss, and black mildew, restoring vibrant stone colors.'
+  },
+  roof: {
+    before: '/user_roof_before.jpg',
+    after: '/user_roof_after.jpg',
+    title: 'Roof Cleaning',
+    desc: 'Safe and effective roof washing to remove ugly black streaks, moss, and lichen, extending the life of your shingles.'
   }
 };
 
@@ -81,6 +87,12 @@ export default function Gallery() {
                 >
                   Patio Power Washing
                 </button>
+                <button 
+                  className={`gallery-tab ${activeTab === 'roof' ? 'active' : ''}`}
+                  onClick={() => { setActiveTab('roof'); setSliderPosition(50); }}
+                >
+                  Roof Cleaning
+                </button>
               </div>
 
               <h3 style={{ fontSize: '28px', fontWeight: '700', marginBottom: '16px', color: 'var(--dark-color)' }}>
@@ -90,10 +102,12 @@ export default function Gallery() {
                 {activeImages.desc}
               </p>
 
-              <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--primary-color)', fontWeight: '600' }}>
-                <Eye size={20} />
-                <span>Drag the slider to compare before and after</span>
-              </div>
+              {activeTab !== 'roof' && (
+                <div style={{ display: 'flex', alignItems: 'center', gap: '10px', color: 'var(--primary-color)', fontWeight: '600' }}>
+                  <Eye size={20} />
+                  <span>Drag the slider to compare before and after</span>
+                </div>
+              )}
             </div>
 
             {/* Right Column: Sliding Image Widget */}
@@ -121,8 +135,12 @@ export default function Gallery() {
               ></div>
 
               {/* Labels */}
-              <div className="slider-img-label label-before">Before</div>
-              <div className="slider-img-label label-after">After</div>
+              {activeTab !== 'roof' && (
+                <>
+                  <div className="slider-img-label label-before">Before</div>
+                  <div className="slider-img-label label-after">After</div>
+                </>
+              )}
 
               {/* Slide Bar / Handle */}
               <div 

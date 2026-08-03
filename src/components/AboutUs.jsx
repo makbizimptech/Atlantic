@@ -22,8 +22,8 @@ export default function AboutUs() {
                 className="about-img-primary"
               />
               <img 
-                src="/cleaner.png" 
-                alt="Atlantic Professional Cleaner" 
+                src="/user_proof_house_wash.jpg" 
+                alt="House Washing Before and After Proof" 
                 className="about-img-secondary"
               />
               <div className="about-badge-floating">
