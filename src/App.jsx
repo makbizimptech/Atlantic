@@ -5,6 +5,7 @@ import Gallery from './components/Gallery';
 import Projects from './components/Projects';
 import WhyUs from './components/WhyUs';
 import Testimonials from './components/Testimonials';
+import CallUs from './components/CallUs';
 import Footer from './components/Footer';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Projects />
         <WhyUs />
         <Testimonials />
+        <CallUs />
       </main>
       <Footer />
     </>
