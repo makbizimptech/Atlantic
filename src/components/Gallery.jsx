@@ -9,8 +9,8 @@ const IMAGES_DATA = {
     desc: 'Deep cleaning of your home exterior, removing built-up dirt, grime, and mildew to restore your siding to its original beauty.'
   },
   patio: {
-    before: '/patio_dirty.png',
-    after: '/patio_clean.png',
+    before: '/new_patio_before.jpg',
+    after: '/new_patio_after.jpg',
     title: 'Patio Power Washing',
     desc: 'Deep pressure wash removing years of grime, green moss, and black mildew, restoring vibrant stone colors.'
   }
