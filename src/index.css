@@ -2461,7 +2461,7 @@ button, input, select, textarea {
   top: 4px;
   width: 100%;
   height: calc(100% - 4px);
-  background: linear-gradient(180deg, #7cc139 0%, #5ca125 100%);
+  background: linear-gradient(180deg, var(--primary-color) 0%, #1a5bca 100%);
   clip-path: polygon(0 0, 100% 0, 100% 100%, 50% 90%, 0 100%);
   display: flex;
   flex-direction: column;
@@ -2479,7 +2479,7 @@ button, input, select, textarea {
   left: 0;
   width: 12px;
   height: 12px;
-  background: #3e6d18;
+  background: #0d3a8a;
   clip-path: polygon(100% 0, 100% 100%, 0 100%);
   z-index: 1;
   transform: translateX(-100%);
@@ -2492,7 +2492,7 @@ button, input, select, textarea {
   right: 0;
   width: 12px;
   height: 12px;
-  background: #3e6d18;
+  background: #0d3a8a;
   clip-path: polygon(0 0, 0 100%, 100% 100%);
   z-index: 1;
   transform: translateX(100%);
