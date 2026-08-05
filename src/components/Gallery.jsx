@@ -3,8 +3,8 @@ import { Eye, ArrowLeftRight } from 'lucide-react';
 
 const IMAGES_DATA = {
   gutter: {
-    before: '/user_gutter_before.jpg',
-    after: '/user_gutter_after.jpg',
+    before: '/user_gutter_after.jpg',
+    after: '/user_gutter_before.jpg',
     title: 'Gutter Cleaning',
     desc: 'Fully cleared gutters free of blockage, twigs, and rotting leaves, ensuring efficient rainfall run-offs.'
   },

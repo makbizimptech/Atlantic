@@ -94,11 +94,7 @@ export default function Header() {
           <Logo />
           
           <div className="page-header-top-middle">
-            <div className="page-header-slogan">We are Cleaning Experts!</div>
-            <div className="page-header-schedule">
-              <Clock size={16} />
-              <span>Mon - Sun: 8:00 AM - 10:00 PM</span>
-            </div>
+            <div className="page-header-slogan">Power Washing & Carpet Cleaning Experts</div>
           </div>
 
           <div className="page-header-top-right" style={{ display: 'flex', alignItems: 'center', gap: '24px' }}>

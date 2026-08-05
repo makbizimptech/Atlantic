@@ -4,25 +4,25 @@ import { ArrowRight, Star, ChevronLeft, ChevronRight } from 'lucide-react';
 const slides = [
   {
     image: '/hero_cleaning.png',
-    tagline: 'PREMIUM CLEANING & REPAIRS IN NJ & NY',
-    title: 'Eco-Friendly Cleaning Services',
-    desc: 'Atlantic Cleaning Service delivers exceptional residential & commercial care. Fully insured professionals specializing in window cleaning, power washing, gutter solutions, and winter services.',
+    tagline: 'PREMIUM CLEANING IN NJ & NY',
+    title: 'Experts in Power Washing & Carpet Cleaning',
+    desc: 'Atlantic Cleaning Service delivers exceptional residential & commercial care. We specialize in deep carpet cleaning and high-pressure power washing to make your property look brand new.',
     btnText: 'Contact Us Now',
     target: 'contact'
   },
   {
     image: '/patio_clean.png',
-    tagline: 'A CARING CLEANING TEAM',
-    title: 'Professional Home & Patio Restoration',
-    desc: 'Get your patios re-sanded, gutters cleaned, and driveways power-washed. We bring back the original shine of your property.',
+    tagline: 'RESTORE YOUR EXTERIOR',
+    title: 'Professional Power Washing',
+    desc: 'Get your patios, driveways, and siding professionally power-washed. We remove dirt, grime, and mildew to restore the original shine of your property.',
     btnText: 'About Us',
     target: 'about-us'
   },
   {
-    image: '/gutter_clean.png',
-    tagline: 'SPEND TIME ON WHAT REALLY MATTERS',
-    title: '15% Off Your First Cleaning Service',
-    desc: 'Serving New Jersey & New York with quality services, professional staff, and 100% satisfaction guaranteed. Get your free custom quote today!',
+    image: '/carpet_clean.png',
+    tagline: 'REVITALIZE YOUR FLOORS',
+    title: 'Deluxe Carpet Cleaning',
+    desc: 'Our hot-water extraction and deep cleaning methods remove stubborn stains and allergens, leaving your carpets fresh, soft, and renewed.',
     btnText: 'View Our Work',
     target: 'projects'
   }
